@@ -1,0 +1,40 @@
+export const ROLES = {
+  CLIENT: "CLIENT",
+  LAWYER: "LAWYER",
+  PARALEGAL: "PARALEGAL",
+  ADMIN: "ADMIN"
+};
+
+export const PERMISSIONS = {
+  CLIENT: [
+    "CASE_VIEW",
+    "DOCUMENT_UPLOAD",
+    "COMMENT_VIEW",
+    "COMMENT_CREATE"
+  ],
+
+  LAWYER: [
+    "CASE_VIEW",
+    "CASE_EDIT",
+    "CASE_DECIDE",
+    "DOCUMENT_CREATE",
+    "DOCUMENT_APPROVE",
+    "TASK_ASSIGN",
+    "STATE_TRANSITION"
+  ],
+
+  PARALEGAL: [
+    "CASE_VIEW",
+    "DOCUMENT_CREATE",
+    "DOCUMENT_UPLOAD",
+    "TASK_MANAGE",
+    "TIMELINE_UPDATE"
+  ],
+
+  ADMIN: [
+    "USER_MANAGE",
+    "CASE_ASSIGN",
+    "SYSTEM_ANALYTICS",
+    "AUDIT_VIEW"
+  ]
+};
